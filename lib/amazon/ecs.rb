@@ -32,21 +32,21 @@ module Amazon
   class RequestError < StandardError; end
 
   class Ecs
-    VERSION = '2.5.0'
+    VERSION = '2.5.1'
 
     SERVICE_URLS = {
-        :us => 'http://webservices.amazon.com/onca/xml',
-        :uk => 'http://webservices.amazon.co.uk/onca/xml',
-        :ca => 'http://webservices.amazon.ca/onca/xml',
-        :de => 'http://webservices.amazon.de/onca/xml',
-        :jp => 'http://webservices.amazon.co.jp/onca/xml',
-        :fr => 'http://webservices.amazon.fr/onca/xml',
-        :it => 'http://webservices.amazon.it/onca/xml',
-        :cn => 'http://webservices.amazon.cn/onca/xml',
-        :es => 'http://webservices.amazon.es/onca/xml',
-        :in => 'http://webservices.amazon.in/onca/xml',
-        :br => 'http://webservices.amazon.com.br/onca/xml',
-        :mx => 'http://webservices.amazon.com.mx/onca/xml'
+        :us => 'https://webservices.amazon.com/onca/xml',
+        :uk => 'https://webservices.amazon.co.uk/onca/xml',
+        :ca => 'https://webservices.amazon.ca/onca/xml',
+        :de => 'https://webservices.amazon.de/onca/xml',
+        :jp => 'https://webservices.amazon.co.jp/onca/xml',
+        :fr => 'https://webservices.amazon.fr/onca/xml',
+        :it => 'https://webservices.amazon.it/onca/xml',
+        :cn => 'https://webservices.amazon.cn/onca/xml',
+        :es => 'https://webservices.amazon.es/onca/xml',
+        :in => 'https://webservices.amazon.in/onca/xml',
+        :br => 'https://webservices.amazon.com.br/onca/xml',
+        :mx => 'https://webservices.amazon.com.mx/onca/xml'
     }
 
     OPENSSL_DIGEST_SUPPORT = OpenSSL::Digest.constants.include?( 'SHA256' ) ||
