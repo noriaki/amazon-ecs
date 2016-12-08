@@ -1,3 +1,7 @@
+2.5.1 2016-12-08
+----------------
+* Change protocol for api endpoint to https
+
 2.5.0 2016-07-09
 ----------------
 * Turn on debug mode with DEBUG_AMAZON_ECS=1
